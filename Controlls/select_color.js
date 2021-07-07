@@ -10,7 +10,7 @@ class ColorSelect{
         let props = {type: "color", value: state.color, onchange: change_handler}
 
         this.input = create(type, props);
-        this.dom = create("label", {}, "Color: ", this.input);
+        this.dom = create("label", {}, "🎨 Color: ", this.input);
     }
 
     syncState(state){

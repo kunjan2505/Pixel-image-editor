@@ -9,7 +9,7 @@ class Undo{
         let handler = () => dispatch({undo: true})
         let props = {onclick: handler, disabled: state.done.length == 0}
 
-        this.dom = create(type, props, "Undo")
+        this.dom = create(type, props, "⮪ Undo")
     }
 
     syncState(state){

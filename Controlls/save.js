@@ -8,7 +8,7 @@ var Save = class Save{
         let type = "button"
 
         let handler = () => this.save()
-        this.dom = create(type, {onclick: handler }, "Save")
+        this.dom = create(type, {onclick: handler }, "💾 Save")
     }
 
     save(){

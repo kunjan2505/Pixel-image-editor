@@ -13,7 +13,7 @@ class ToolSelect{
         let change_handler = () => dispatch({tool: this.select.value})
 
         this.select = create(type, {onchange: change_handler}, ...tool_name_doms)
-        this.dom = create("label", {}, "Tool: ", this.select)
+        this.dom = create("label", {}, "🖌 Tool: ", this.select)
     }
 
     syncState(state){

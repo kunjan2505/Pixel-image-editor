@@ -3,8 +3,8 @@ let circle = (start, state, dispatch) => {
 
     // In following function we are not taking state as an argument because we don't want to crate multiple circles while dragging
     let draw_circle = pos => {
-        let radius = Math.sqrt(Math.pow(pos.x - start.x, 2) + Math.pow(pos.y - start.y, 2))
-        radius = Math.ceil(radius)
+        let Radius = Math.sqrt(Math.pow(pos.x - start.x, 2) + Math.pow(pos.y - start.y, 2))
+        let radius = Math.ceil(Radius)
         
         let drawn = []
         for(let dy = -radius; dy <= radius; ++dy){
