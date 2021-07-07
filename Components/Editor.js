@@ -1,7 +1,7 @@
 import { PictureCanvas } from "./picture_canvas.js"
 import { create } from "./utitlities.js"
 
-var Editor = class Editor{
+let Editor = class Editor{
 
     // state := object with different state elements
     // config := object with tools (array of drawing tool functions), controls and dispatch function which handles change in state

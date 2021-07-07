@@ -1,5 +1,5 @@
 
-let circle = (start, state, dispatch) => {
+let filled_circle = (start, state, dispatch) => {
 
     // In following function we are not taking state as an argument because we don't want to crate multiple circles while dragging
     let draw_circle = pos => {
@@ -11,9 +11,7 @@ let circle = (start, state, dispatch) => {
             for(let dx = -radius; dx <= radius; ++dx){
                 let dist = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
 
-                let threshold = (radius > 9 ? radius * 0.9 : radius * 0.7)
-                
-                if(dist > radius || dist < threshold) 
+                if(dist > radius) 
                     continue
 
                 let x = start.x + dx
@@ -34,4 +32,4 @@ let circle = (start, state, dispatch) => {
     return draw_circle
 }
 
-export {circle}
+export {filled_circle}
